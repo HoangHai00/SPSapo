@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FragmentOrder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtOrderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:gravity="center"
+            android:text="Đơn hàng"
+            android:textColor="#041E1B"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/llOrderList1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constOrderOrder">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderList1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_list_product" />
+
+            <TextView
+                android:id="@+id/txtOrderList1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="8"
+                android:text="Danh sách đơn hàng"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderNext1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llOrderList2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOrderList1">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderList2"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_back_3" />
+
+            <TextView
+                android:id="@+id/txtOrderList2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="8"
+                android:text="Khách trả hàng"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderNext2"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrderList3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOrderList2">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderList3"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_transport" />
+
+            <TextView
+                android:id="@+id/txtOrderList3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="8"
+                android:text="Quản lý giao hàng"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderNext3"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrderList4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOrderList3">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderList4"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic__warehouse" />
+
+            <TextView
+                android:id="@+id/txtOrderList4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="8"
+                android:text="Bán tại cửa hàng"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderNext4"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrderList5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_cri_white_grey_stroke"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOrderList4">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderList5"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_list_3" />
+
+            <TextView
+                android:id="@+id/txtOrderList5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="8"
+                android:text="Đơn lưu tạm"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderNext5"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_next" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constOrderOrder"
+            android:layout_width="308dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/shape_cri_white_white_stroke_corner_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOrderTitle">
+
+            <ImageButton
+                android:id="@+id/ivbtnOrderOrder"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape_pri_blue_white_stroke_corner_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/txtOrderOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Tạo đơn hàng và giao hàng"
+                android:textColor="#041E1B"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivbtnOrderOrder" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

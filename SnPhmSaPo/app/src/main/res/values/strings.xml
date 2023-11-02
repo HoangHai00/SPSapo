@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Sản Phẩm SaPo</string>
+    <string name="loading">Vui lòng đợi!</string>
+    <string name="internet">Vui lòng kiểm tra kết nối mạng!</string>
+    <string name="ListVariant">Quản lý kho</string>
+    <string name="ListProduct">Sản phẩm</string>
+    <string name="TitleProduct">%d sản phẩm</string>
+    <string name="TitleVariant">%d phiên bản</string>
+    <string name="Available">Có thể bán</string>
+    <string name="UnAvailable">Không cho phép bán</string>
+    <string name="TaxableTrue">Giá đã bao gồm thuế</string>
+    <string name="TaxableFalse">Chưa bao gồm thuế</string>
+    <string name="Vat">%d %%</string>
+    <string name="UnActive">Ngừng giao dịch</string>
+    <string name="Active">active</string>
+    <string name="SizeOne">Kích thước</string>
+    <string name="SizeTow">Số lượng quy đổi</string>
+    <string name="LimitEdt">Đã vượt quá số lượng kí tự nhập</string>
+    <string name="MaxProduct">Đã tối đa</string>
+    <string name="Weight">%s %s</string>
+    <string name="draft">draft</string>
+    <string name="SKU">SKU: %s</string>
+    <string name="Number">%s%d</string>
+    <string name="DeleteItemOrder">Bạn có chắc chắn muốn xóa sản phẩm: %s này ra khỏi đơn hàng không?</string>
+    <string name="PostSuccess">Tạo đơn hàng thành công!</string>
+
+
+</resources>

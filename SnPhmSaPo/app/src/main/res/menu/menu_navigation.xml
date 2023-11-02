@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/ic_home"
+        android:title="Tổng quan" />
+
+    <item
+        android:id="@+id/itemOrder"
+        android:icon="@drawable/ic_order"
+        android:title="Đơn hàng" />
+
+    <item
+        android:id="@+id/itemTransport"
+        android:icon="@drawable/ic_transport"
+        android:title="Vận chuyển" />
+
+    <item
+        android:id="@+id/itemProduct"
+        android:icon="@drawable/ic_product"
+        android:title="Sản phẩm"
+        />
+
+    <item
+        android:id="@+id/itemThem"
+        android:icon="@drawable/ic_them"
+        android:title="Thêm" />
+</menu>

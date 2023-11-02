@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ActivityListProduct">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nscrlListProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txtListProductProductNumber"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#f5f6fa"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="số lượng sản phẩm"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constListProductTitle" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swrlListProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtListProductProductNumber"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvListProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <ImageButton
+                android:id="@+id/ivbtnListProductOrder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_pri_blue_white_stroke_corner_50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.959"
+                app:srcCompat="@drawable/ic_add" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constListProductTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_cri_white_grey_stroke"
+                android:paddingBottom="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ivbtnListProductBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_cri_grey_white_stroke_corner_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.041"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/txtListProductTitle"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Sản Phẩm"
+                    android:textColor="#041E1B"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.447"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/ivbtnListProductList"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/shape_cri_grey_white_stroke_corner_50"
+                    app:layout_constraintEnd_toStartOf="@+id/ivbtnListProductSetting"
+                    app:layout_constraintHorizontal_bias="0.962"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_list_varian_product" />
+
+                <ImageButton
+                    android:id="@+id/ivbtnListProductSetting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/shape_cri_grey_white_stroke_corner_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_setting" />
+
+                <ImageButton
+                    android:id="@+id/ivbtnListProductVarianProduct"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_cri_grey_white_stroke_corner_50"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.803"
+                    app:layout_constraintStart_toEndOf="@+id/ivbtnListProductBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_list" />
+
+                <LinearLayout
+                    android:id="@+id/llListProductSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_layout_search"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtListProductTitle">
+
+                    <ImageButton
+                        android:id="@+id/ivbtnListProductSearch"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="#f5f6fa"
+                        app:srcCompat="@drawable/ic_search" />
+
+                    <EditText
+                        android:id="@+id/edtListProductSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="9"
+                        android:background="@android:color/transparent"
+                        android:hint="Tên, SKU, Barcode"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtListProductTitleAllProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Tất cả loại sản phẩm"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llListProductSearch" />
+
+                <ImageView
+                    android:id="@+id/ivListProductDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txtListProductTitleAllProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/llListProductSearch"
+                    app:srcCompat="@drawable/ic_down" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
